@@ -2,30 +2,23 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 
 export default function Hero() {
     return (
-        <section id="home" className="pt-16 min-h-screen flex items-center">
-            <div className="max-w-6xl mx-auto px-4 py-20">
-                <div className="text-center">
-                    <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-                        Ernie Brodeur
-                    </h1>
-                    <p className="text-xl md:text-2xl text-gray-300 mb-8">
-                        Full Stack Developer & Designer
-                    </p>
-                    <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-12">
-                        Building exceptional digital experiences with modern technologies
-                    </p>
-                    <div className="flex justify-center space-x-6">
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                            <Github size={28} />
-                        </a>
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                            <Linkedin size={28} />
-                        </a>
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                            <Mail size={28} />
-                        </a>
-                    </div>
-                </div>
+        <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 via-gray-800 to-gray-700 text-white text-center px-4">
+            <h1 className="text-5xl font-bold mb-4">Hi, I'm Ernie</h1>
+            <p className="text-xl mb-8 max-w-xl">
+                Full-stack developer focused on React, TypeScript, and modern web apps.
+            </p>
+            <div className="flex gap-4 justify-center">
+                <a href="#projects" className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded shadow-lg transition">
+                    View Projects
+                </a>
+                <a href="#contact" className="bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded shadow-lg transition">
+                    Contact Me
+                </a>
+            </div>
+            <div className="flex gap-6 mt-8 text-white">
+                <a href="https://github.com/erniebrodeur" target="_blank"><Github size={28} /></a>
+                <a href="https://linkedin.com" target="_blank"><Linkedin size={28} /></a>
+                <a href="mailto:you@example.com"><Mail size={28} /></a>
             </div>
         </section>
     );

@@ -1,54 +1,30 @@
-import { useState } from 'react';
+import { Github } from 'lucide-react';
 
-export default function Contact() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
-    });
-
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        console.log('Form submitted:', formData);
-        // You can replace this with your actual submission logic
-    };
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value,
-        });
-    };
+export default function Projects() {
+    const projects = [
+        {
+            title: 'Godu',
+            description: 'Godu is my existing project with all its original content.',
+            github: 'https://github.com/erniebrodeur/godu',
+        },
+    ];
 
     return (
-        <section className="contact-section">
-            <h2>Contact Me</h2>
-            <form onSubmit={handleSubmit} className="contact-form">
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                />
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                />
-                <textarea
-                    name="message"
-                    placeholder="Your Message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                />
-                <button type="submit">Send</button>
-            </form>
+        <section id="projects" className="px-4 py-12 bg-gray-900 text-white">
+            <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                {projects.map((p, i) => (
+                    <div key={i} className="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transform transition">
+                        <h3 className="text-xl font-semibold mb-2">{p.title}</h3>
+                        <p className="mb-4">{p.description}</p>
+                        {p.github && (
+                            <a href={p.github} target="_blank" className="flex items-center gap-1 text-blue-400 hover:text-blue-600">
+                                <Github size={18} /> Code
+                            </a>
+                        )}
+                    </div>
+                ))}
+            </div>
         </section>
     );
 }

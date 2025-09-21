@@ -9,26 +9,8 @@ const projects = [
         tags: ['Go', 'CLI'],
         githubUrl: '#',
         liveUrl: '#'
-    },
-    {
-        id: 2,
-        name: 'Project 2',
-        description: 'Description of your amazing project and the technologies used to build it.',
-        gradient: 'from-blue-500 to-purple-600',
-        tags: ['React', 'Node.js'],
-        githubUrl: '#',
-        liveUrl: '#'
-    },
-    {
-        id: 3,
-        name: 'Project 3',
-        description: 'Description of your amazing project and the technologies used to build it.',
-        gradient: 'from-purple-500 to-pink-600',
-        tags: ['Vue', 'Python'],
-        githubUrl: '#',
-        liveUrl: '#'
     }
-];
+]
 
 export default function Projects() {
     return (
