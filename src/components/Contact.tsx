@@ -1,29 +1,40 @@
-import { Github } from 'lucide-react';
+import { Mail, Github, Linkedin } from 'lucide-react';
 
-export default function Projects() {
-    const projects = [
-        {
-            title: 'Godu',
-            description: 'Godu is my existing project with all its original content.',
-            github: 'https://github.com/erniebrodeur/godu',
-        },
-    ];
-
+export default function Contact() {
     return (
-        <section id="projects" className="px-4 py-12 bg-gray-900 text-white">
-            <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                {projects.map((p, i) => (
-                    <div key={i} className="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transform transition">
-                        <h3 className="text-xl font-semibold mb-2">{p.title}</h3>
-                        <p className="mb-4">{p.description}</p>
-                        {p.github && (
-                            <a href={p.github} target="_blank" className="flex items-center gap-1 text-blue-400 hover:text-blue-600">
-                                <Github size={18} /> Code
-                            </a>
-                        )}
-                    </div>
-                ))}
+        <section id="contact" className="px-4 py-12 bg-gray-800 text-white">
+            <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-3xl font-bold mb-8">Get In Touch</h2>
+                <p className="text-lg mb-8 text-gray-300">
+                    I'm always interested in new opportunities and interesting projects.
+                </p>
+                <div className="flex justify-center gap-8 flex-wrap">
+                    <a
+                        href="mailto:you@example.com"
+                        className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors"
+                    >
+                        <Mail size={20} />
+                        Email Me
+                    </a>
+                    <a
+                        href="https://github.com/erniebrodeur"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-lg transition-colors"
+                    >
+                        <Github size={20} />
+                        GitHub
+                    </a>
+                    <a
+                        href="https://linkedin.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 bg-blue-800 hover:bg-blue-900 px-6 py-3 rounded-lg transition-colors"
+                    >
+                        <Linkedin size={20} />
+                        LinkedIn
+                    </a>
+                </div>
             </div>
         </section>
     );

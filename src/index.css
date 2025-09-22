@@ -1,28 +1,47 @@
-/* Tailwind CSS base styles */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Custom global styles (optional) */
+/* Global CSS styles */
 body {
-  @apply bg-gray-900 text-white font-sans;
+  background-color: #111827; /* gray-900 */
+  color: white;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
 
 a {
-  @apply text-blue-400 hover:text-blue-600;
+  color: #60a5fa; /* blue-400 */
+}
+
+a:hover {
+  color: #2563eb; /* blue-600 */
 }
 
 button {
-  @apply bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded;
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2563eb; /* blue-600 */
 }
 
 input,
 textarea {
-  @apply bg-gray-800 text-white border border-gray-700 rounded p-2 w-full;
+  background-color: #1f2937; /* gray-800 */
+  color: white;
+  border: 1px solid #374151; /* gray-700 */
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  width: 100%;
 }
 
 section {
-  @apply my-8 px-4;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
