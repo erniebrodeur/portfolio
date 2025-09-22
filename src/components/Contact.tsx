@@ -2,16 +2,41 @@ import { Mail, Github, Linkedin } from 'lucide-react';
 
 export default function Contact() {
     return (
-        <section id="contact" className="px-4 py-12 bg-gray-800 text-white">
-            <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl font-bold mb-8">Get In Touch</h2>
-                <p className="text-lg mb-8 text-gray-300">
+        <section id="contact" style={{
+            padding: '3rem 1rem',
+            backgroundColor: '#1f2937',
+            color: 'white'
+        }}>
+            <div style={{
+                maxWidth: '64rem',
+                margin: '0 auto',
+                textAlign: 'center'
+            }}>
+                <h2 style={{fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '2rem'}}>Get In Touch</h2>
+                <p style={{fontSize: '1.125rem', marginBottom: '2rem', color: '#d1d5db'}}>
                     I'm always interested in new opportunities and interesting projects.
                 </p>
-                <div className="flex justify-center gap-8 flex-wrap">
+                <div style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    gap: '2rem',
+                    flexWrap: 'wrap'
+                }}>
                     <a
                         href="mailto:you@example.com"
-                        className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors"
+                        style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '0.5rem',
+                            backgroundColor: '#2563eb',
+                            padding: '0.75rem 1.5rem',
+                            borderRadius: '0.5rem',
+                            textDecoration: 'none',
+                            color: 'white',
+                            transition: 'background-color 0.3s'
+                        }}
+                        onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#1d4ed8'}
+                        onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#2563eb'}
                     >
                         <Mail size={20} />
                         Email Me
@@ -20,7 +45,19 @@ export default function Contact() {
                         href="https://github.com/erniebrodeur"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-lg transition-colors"
+                        style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '0.5rem',
+                            backgroundColor: '#374151',
+                            padding: '0.75rem 1.5rem',
+                            borderRadius: '0.5rem',
+                            textDecoration: 'none',
+                            color: 'white',
+                            transition: 'background-color 0.3s'
+                        }}
+                        onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#4b5563'}
+                        onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#374151'}
                     >
                         <Github size={20} />
                         GitHub
@@ -29,7 +66,19 @@ export default function Contact() {
                         href="https://linkedin.com"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 bg-blue-800 hover:bg-blue-900 px-6 py-3 rounded-lg transition-colors"
+                        style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '0.5rem',
+                            backgroundColor: '#0077b5',
+                            padding: '0.75rem 1.5rem',
+                            borderRadius: '0.5rem',
+                            textDecoration: 'none',
+                            color: 'white',
+                            transition: 'background-color 0.3s'
+                        }}
+                        onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#005885'}
+                        onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0077b5'}
                     >
                         <Linkedin size={20} />
                         LinkedIn

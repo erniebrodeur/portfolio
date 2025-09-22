@@ -2,20 +2,29 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 
 export default function Hero() {
     return (
-        <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 via-gray-800 to-gray-700 text-white text-center px-4">
-            <h1 className="text-5xl font-bold mb-4">Hi, I'm Ernie</h1>
-            <p className="text-xl mb-8 max-w-xl">
+        <section style={{
+            minHeight: '100vh', 
+            display: 'flex', 
+            flexDirection: 'column', 
+            alignItems: 'center', 
+            justifyContent: 'center', 
+            textAlign: 'center', 
+            padding: '0 1rem',
+            background: 'linear-gradient(to bottom, #111827, #1f2937, #374151)'
+        }}>
+            <h1 style={{fontSize: '3rem', fontWeight: 'bold', marginBottom: '1rem'}}>Hi, I'm Ernie</h1>
+            <p style={{fontSize: '1.25rem', marginBottom: '2rem', maxWidth: '36rem'}}>
                 Full-stack developer focused on React, TypeScript, and modern web apps.
             </p>
-            <div className="flex gap-4 justify-center">
-                <a href="#projects" className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded shadow-lg transition">
+            <div style={{display: 'flex', gap: '1rem', justifyContent: 'center'}}>
+                <a href="#projects" className="btn-primary">
                     View Projects
                 </a>
-                <a href="#contact" className="bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded shadow-lg transition">
+                <a href="#contact" className="btn-secondary">
                     Contact Me
                 </a>
             </div>
-            <div className="flex gap-6 mt-8 text-white">
+            <div style={{display: 'flex', gap: '1.5rem', marginTop: '2rem'}}>
                 <a href="https://github.com/erniebrodeur" target="_blank"><Github size={28} /></a>
                 <a href="https://linkedin.com" target="_blank"><Linkedin size={28} /></a>
                 <a href="mailto:you@example.com"><Mail size={28} /></a>

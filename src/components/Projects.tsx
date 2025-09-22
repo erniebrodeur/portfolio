@@ -14,27 +14,27 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section id="projects" className="py-20">
-            <div className="max-w-6xl mx-auto px-4">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Featured Projects</h2>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section id="projects" style={{paddingTop: '5rem', paddingBottom: '5rem'}}>
+            <div style={{maxWidth: '1200px', margin: '0 auto', padding: '0 1rem'}}>
+                <h2 style={{fontSize: '1.875rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '4rem'}}>Featured Projects</h2>
+                <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem'}}>
                     {projects.map((project) => (
-                        <div key={project.id} className="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
-                            <div className={`h-48 bg-gradient-to-r ${project.gradient}`}></div>
-                            <div className="p-6">
-                                <h3 className="text-xl font-bold mb-3">{project.name}</h3>
-                                <p className="text-gray-400 mb-4">{project.description}</p>
-                                <div className="flex justify-between items-center">
-                                    <div className="flex space-x-2">
+                        <div key={project.id} className="project-card">
+                            <div className="project-header" style={{background: `linear-gradient(to right, #10b981, #2563eb)`}}></div>
+                            <div className="project-content">
+                                <h3 style={{fontSize: '1.25rem', fontWeight: 'bold', marginBottom: '1rem'}}>{project.name}</h3>
+                                <p style={{color: '#9ca3af', marginBottom: '1rem'}}>{project.description}</p>
+                                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                                    <div style={{display: 'flex', gap: '1rem'}}>
                                         {project.tags.map((tag) => (
-                                            <span key={tag} className="px-2 py-1 bg-blue-600 text-xs rounded">{tag}</span>
+                                            <span key={tag} style={{backgroundColor: '#2563eb', fontSize: '0.75rem', padding: '0.25rem 0.5rem', borderRadius: '0.25rem'}}>{tag}</span>
                                         ))}
                                     </div>
-                                    <div className="flex space-x-2">
-                                        <a href={project.githubUrl} className="text-gray-400 hover:text-white">
+                                    <div style={{display: 'flex', gap: '1rem'}}>
+                                        <a href={project.githubUrl} style={{color: '#9ca3af'}} onMouseOver={(e) => e.currentTarget.style.color = 'white'} onMouseOut={(e) => e.currentTarget.style.color = '#9ca3af'}>
                                             <Github size={20} />
                                         </a>
-                                        <a href={project.liveUrl} className="text-gray-400 hover:text-white">
+                                        <a href={project.liveUrl} style={{color: '#9ca3af'}} onMouseOver={(e) => e.currentTarget.style.color = 'white'} onMouseOut={(e) => e.currentTarget.style.color = '#9ca3af'}>
                                             <ExternalLink size={20} />
                                         </a>
                                     </div>

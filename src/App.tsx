@@ -6,14 +6,14 @@ import Contact from './components/Contact';
 
 export default function App() {
     return (
-        <div className="min-h-screen bg-gray-900 text-white">
+        <div style={{minHeight: '100vh'}}>
             <Header />
             <Hero />
             <About />
             <Projects />
             <Contact />
 
-            <footer className="py-8 text-center text-gray-400">
+            <footer style={{paddingTop: '2rem', paddingBottom: '2rem', textAlign: 'center', color: '#9ca3af'}}>
                 <p>&copy; 2025 Ernie Brodeur. All rights reserved.</p>
             </footer>
         </div>

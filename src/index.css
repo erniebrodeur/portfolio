@@ -1,32 +1,79 @@
 /* Global CSS styles */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #111827; /* gray-900 */
   color: white;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
+}
+
+/* Button variants */
+.btn-primary {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #374151; /* gray-700 */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-secondary:hover {
+  background-color: #4b5563; /* gray-600 */
+  color: white;
+}
+
+/* Card styles */
+.project-card {
+  background-color: #1f2937; /* gray-800 */
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-header {
+  height: 12rem;
+  background: linear-gradient(to right, #10b981, #2563eb);
+}
+
+.project-content {
+  padding: 1.5rem;
 }
 
 a {
   color: #60a5fa; /* blue-400 */
+  text-decoration: none;
 }
 
 a:hover {
   color: #2563eb; /* blue-600 */
-}
-
-button {
-  background-color: #3b82f6; /* blue-500 */
-  color: white;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #2563eb; /* blue-600 */
 }
 
 input,
@@ -37,11 +84,4 @@ textarea {
   border-radius: 0.25rem;
   padding: 0.5rem;
   width: 100%;
-}
-
-section {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
