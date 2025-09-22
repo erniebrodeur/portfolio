@@ -1,69 +1,47 @@
-# React + TypeScript + Vite
+# Ernie Brodeur's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This is a modern, responsive web application showcasing my work, skills, and experience as a developer.
 
-Currently, two official plugins are available:
+## 🚀 About This Portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio is built with modern web technologies to provide a smooth, engaging experience for visitors. It features:
 
-## Expanding the ESLint configuration
+- **Interactive Design**: Clean, professional interface with smooth animations
+- **Responsive Layout**: Optimized for all devices - desktop, tablet, and mobile
+- **Project Showcase**: Detailed presentations of my best work and contributions
+- **About Section**: Insights into my background, skills, and professional journey
+- **Contact Information**: Easy ways to get in touch for collaboration opportunities
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Frontend**: React 18 with TypeScript for type-safe, component-based development
+- **Build Tool**: Vite for lightning-fast development and optimized production builds
+- **Styling**: Modern CSS with responsive design principles
+- **Code Quality**: ESLint for consistent code standards and best practices
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🌟 Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **Hero Section**: Eye-catching introduction with my key skills
+- **About Page**: Comprehensive overview of my background and expertise
+- **Projects Gallery**: Curated selection of my best work with detailed descriptions
+- **Contact Form**: Direct way to reach out for opportunities or collaboration
+- **Smooth Navigation**: Seamless user experience with intuitive routing
+
+## 🚀 Getting Started
+
+To run this portfolio locally:
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📫 Let's Connect
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Feel free to explore my work and reach out if you'd like to discuss potential opportunities or collaborations!
