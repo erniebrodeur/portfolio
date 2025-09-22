@@ -3,6 +3,24 @@ import { Github, ExternalLink } from 'lucide-react';
 const projects = [
     {
         id: 1,
+        name: 'cts-mpx-aci',
+        description: 'Enterprise-grade Account Continuous Integration toolkit for Comcast Technology Solutions MPX. Implements sophisticated data collection, transformation, imaging, and deployment workflows across video platform environments with dependency resolution and rollback capabilities.',
+        gradient: 'from-purple-600 to-blue-800',
+        tags: ['Ruby', 'Enterprise', 'CI/CD', 'Video Platform'],
+        githubUrl: 'https://github.com/erniebrodeur/cts-mpx-aci',
+        liveUrl: 'https://github.com/erniebrodeur/cts-mpx-aci'
+    },
+    {
+        id: 2,
+        name: 'cts-mpx',
+        description: 'Comprehensive Ruby SDK for Comcast Technology Solutions MPX video services. Production-ready library providing full REST API access, authentication, query building, and data management for enterprise video workflow systems.',
+        gradient: 'from-red-600 to-purple-700',
+        tags: ['Ruby', 'SDK', 'Enterprise', 'Video API'],
+        githubUrl: 'https://github.com/Comcast/cts-mpx',
+        liveUrl: 'https://github.com/Comcast/cts-mpx'
+    },
+    {
+        id: 3,
         name: 'pushover',
         description: 'A gem to interface with pushover.net - providing both CLI and API interfaces for sending push notifications.',
         gradient: 'from-red-500 to-pink-600',
@@ -11,7 +29,7 @@ const projects = [
         liveUrl: 'http://erniebrodeur.github.io/pushover/'
     },
     {
-        id: 2,
+        id: 4,
         name: 'goprompt',
         description: 'Customizable shell prompt tool using Go concurrency for fast, responsive prompts that never hang.',
         gradient: 'from-blue-500 to-cyan-600',
@@ -20,7 +38,7 @@ const projects = [
         liveUrl: 'https://github.com/erniebrodeur/goprompt'
     },
     {
-        id: 3,
+        id: 5,
         name: 'ruby-beautify',
         description: 'A CLI tool to beautify Ruby code output with configurable indentation and formatting options.',
         gradient: 'from-red-600 to-orange-500',
@@ -29,31 +47,13 @@ const projects = [
         liveUrl: 'https://github.com/erniebrodeur/ruby-beautify'
     },
     {
-        id: 4,
+        id: 6,
         name: 'mcp-grep',
         description: 'Model Context Protocol server that exposes grep functionality with natural language prompting support.',
         gradient: 'from-green-500 to-blue-600',
         tags: ['Python', 'MCP', 'CLI'],
         githubUrl: 'https://github.com/erniebrodeur/mcp-grep',
         liveUrl: 'https://smithery.ai/server/@erniebrodeur/mcp-grep'
-    },
-    {
-        id: 5,
-        name: 'cts-mpx',
-        description: 'Ruby SDK for communicating with MPX REST services, providing comprehensive API access.',
-        gradient: 'from-purple-500 to-indigo-600',
-        tags: ['Ruby', 'SDK', 'API'],
-        githubUrl: 'https://github.com/erniebrodeur/cts-mpx',
-        liveUrl: 'https://github.com/erniebrodeur/cts-mpx'
-    },
-    {
-        id: 6,
-        name: 'cts-mpx-aci',
-        description: 'Account Continuous Integration toolkit for recording, imaging, and deploying MPX data services.',
-        gradient: 'from-orange-500 to-red-600',
-        tags: ['Ruby', 'DevOps', 'CI/CD'],
-        githubUrl: 'https://github.com/erniebrodeur/cts-mpx-aci',
-        liveUrl: 'https://github.com/erniebrodeur/cts-mpx-aci'
     }
 ]
 
