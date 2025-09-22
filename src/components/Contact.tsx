@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin } from 'lucide-react';
+import { Mail, Github } from 'lucide-react';
 
 export default function Contact() {
     return (
@@ -23,7 +23,7 @@ export default function Contact() {
                     flexWrap: 'wrap'
                 }}>
                     <a
-                        href="mailto:you@example.com"
+                        href="mailto:ebrodeur@ujami.net"
                         style={{
                             display: 'flex',
                             alignItems: 'center',
@@ -61,27 +61,6 @@ export default function Contact() {
                     >
                         <Github size={20} />
                         GitHub
-                    </a>
-                    <a
-                        href="https://linkedin.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '0.5rem',
-                            backgroundColor: '#0077b5',
-                            padding: '0.75rem 1.5rem',
-                            borderRadius: '0.5rem',
-                            textDecoration: 'none',
-                            color: 'white',
-                            transition: 'background-color 0.3s'
-                        }}
-                        onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#005885'}
-                        onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0077b5'}
-                    >
-                        <Linkedin size={20} />
-                        LinkedIn
                     </a>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Mail } from 'lucide-react';
 
 export default function Hero() {
     return (
@@ -26,8 +26,7 @@ export default function Hero() {
             </div>
             <div style={{display: 'flex', gap: '1.5rem', marginTop: '2rem'}}>
                 <a href="https://github.com/erniebrodeur" target="_blank"><Github size={28} /></a>
-                <a href="https://linkedin.com" target="_blank"><Linkedin size={28} /></a>
-                <a href="mailto:you@example.com"><Mail size={28} /></a>
+                <a href="mailto:ebrodeur@ujami.net"><Mail size={28} /></a>
             </div>
         </section>
     );
