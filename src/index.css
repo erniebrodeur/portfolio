@@ -14,7 +14,7 @@ body {
 
 /* Button variants */
 .btn-primary {
-  background-color: #3b82f6;
+  background-color: #3b76f6;
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 0.25rem;
@@ -25,7 +25,7 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #2563eb;
+  background-color: #255dc8;
   color: white;
 }
 
@@ -60,7 +60,7 @@ body {
 
 .project-header {
   height: 2rem;
-  background: linear-gradient(to right, #10b981, #2563eb);
+  background: linear-gradient(to right, #12a66c, #267cd6); /* updated warmer accent colors */
 }
 
 .project-content {
