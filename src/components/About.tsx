@@ -9,8 +9,8 @@ export default function About() {
         }}>
             <h2 style={{fontSize: '1.875rem', fontWeight: 'bold', marginBottom: '1.5rem', textAlign: 'center'}}>About Me</h2>
             <p style={{fontSize: '1.125rem', lineHeight: 1.7}}>
-                I'm a senior-level software engineer with 15+ years of experience specializing in Ruby, React, and polyglot development.
-                I enjoy building modern, maintainable web applications and learning new languages and technologies.
+                I'm an expert Ruby developer and backend engineer with 15+ years of experience building robust SaaS platforms and scalable web applications.
+                I specialize in server-side architecture, API design, and creating maintainable backend systems that power modern businesses.
             </p>
         </section>
     );

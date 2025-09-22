@@ -14,7 +14,7 @@ export default function Hero() {
         }}>
             <h1 style={{fontSize: '3rem', fontWeight: 'bold', marginBottom: '1rem'}}>Hi, I'm Ernie</h1>
             <p style={{fontSize: '1.25rem', marginBottom: '2rem', maxWidth: '36rem'}}>
-                Full-stack developer focused on React, TypeScript, and modern web apps.
+                Ruby expert and backend engineer specializing in SaaS platforms and scalable server-side systems.
             </p>
             <div style={{display: 'flex', gap: '1rem', justifyContent: 'center'}}>
                 <a href="#projects" className="btn-primary">
