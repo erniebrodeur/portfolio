@@ -14,7 +14,7 @@ export default function Hero() {
         }}>
             <h1 style={{fontSize: '3rem', fontWeight: 'bold', marginBottom: '1rem'}}>Hi, I'm Ernie</h1>
             <p style={{fontSize: '1.25rem', marginBottom: '2rem', maxWidth: '36rem'}}>
-                I architect enterprise integration systems and developer tools that scale from startups to Fortune 500 companies. 15+ years building the infrastructure that powers video platforms, CI/CD pipelines, and developer workflows.
+                I architect enterprise integration systems and developer tools. Spent 10 years at Comcast building large-scale infrastructure, then transitioned to startups and independent work creating video platforms, CI/CD pipelines, and developer workflows.
             </p>
             <div style={{display: 'flex', gap: '1rem', justifyContent: 'center'}}>
                 <a href="#projects" className="btn-primary">

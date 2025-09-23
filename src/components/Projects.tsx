@@ -3,6 +3,15 @@ import { Github, ExternalLink } from 'lucide-react';
 const projects = [
     {
         id: 1,
+        name: 'Idlewild',
+        description: 'An incremental idle game built with React featuring resource management, automation systems, and progression mechanics. Demonstrates modern React patterns, state management, and game development concepts in a web environment.',
+        gradient: 'from-green-500 to-purple-600',
+        tags: ['React', 'TypeScript', 'Game Dev'],
+        githubUrl: 'https://github.com/erniebrodeur/idlewild',
+        liveUrl: 'https://erniebrodeur.github.io/idlewild/'
+    },
+    {
+        id: 2,
         name: 'cts-mpx-aci',
         description: 'Enterprise CI/CD automation that eliminated manual deployment errors for Comcast\'s video platform teams. Reduced deployment time from hours to minutes while adding dependency resolution and automated rollbacks. Saved the company approximately $300,000 annually through operational efficiency.',
         gradient: 'from-purple-600 to-blue-800',
@@ -11,7 +20,7 @@ const projects = [
         liveUrl: 'https://github.com/erniebrodeur/cts-mpx-aci'
     },
     {
-        id: 2,
+        id: 3,
         name: 'cts-mpx',
         description: 'The official Ruby SDK that development teams at Comcast use to manage their video assets. Powers multiple internal applications, handles millions of API calls daily, and provides the foundation for enterprise video workflow systems.',
         gradient: 'from-red-600 to-purple-700',
@@ -20,7 +29,7 @@ const projects = [
         liveUrl: 'https://github.com/Comcast/cts-mpx'
     },
     {
-        id: 3,
+        id: 4,
         name: 'pushover',
         description: 'Production-ready notification system with both CLI and API interfaces. Used by development teams for deployment alerts, monitoring notifications, and automated status updates.',
         gradient: 'from-red-500 to-pink-600',
@@ -29,7 +38,7 @@ const projects = [
         liveUrl: 'http://erniebrodeur.github.io/pushover/'
     },
     {
-        id: 4,
+        id: 5,
         name: 'goprompt',
         description: 'High-performance shell prompt built with Go concurrency patterns. Provides instant responsiveness even in large repositories by running git status checks asynchronously, eliminating the common problem of slow shell prompts.',
         gradient: 'from-blue-500 to-cyan-600',
@@ -38,7 +47,7 @@ const projects = [
         liveUrl: 'https://github.com/erniebrodeur/goprompt'
     },
     {
-        id: 5,
+        id: 6,
         name: 'ruby-beautify',
         description: 'Code formatting tool that standardizes Ruby code style across development teams. Features configurable indentation rules and integrates with existing development workflows.',
         gradient: 'from-red-600 to-orange-500',
@@ -47,7 +56,7 @@ const projects = [
         liveUrl: 'https://github.com/erniebrodeur/ruby-beautify'
     },
     {
-        id: 6,
+        id: 7,
         name: 'mcp-grep',
         description: 'Model Context Protocol server that bridges traditional Unix tools with modern AI workflows. Enables natural language queries against codebases and demonstrates next-generation developer tool integration patterns.',
         gradient: 'from-green-500 to-blue-600',
@@ -65,12 +74,15 @@ export default function Projects() {
             'pink-600': '#db2777',
             'blue-500': '#3b82f6',
             'blue-600': '#2563eb',
+            'blue-800': '#1e40af',
             'cyan-600': '#0891b2',
             'orange-500': '#f97316',
             'orange-600': '#ea580c',
             'green-500': '#10b981',
             'green-600': '#059669',
             'purple-500': '#a855f7',
+            'purple-600': '#9333ea',
+            'purple-700': '#7c3aed',
             'indigo-600': '#4f46e5'
         };
         
